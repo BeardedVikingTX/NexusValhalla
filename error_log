@@ -91,3 +91,29 @@ Stack trace:
 #0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
 #1 {main}
   thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 80
+[08-Sep-2026 16:59:42 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 19
+[08-Sep-2026 16:59:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 19
+[08-Sep-2026 17:00:29 UTC] NexusValhalla: Token mismatch detected. Possible cookie tampering.
+[08-Sep-2026 17:00:29 UTC] [2026-09-08 17:00:29] [info] [IP: 209.113.134.95] [UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36] New session initialized
+[08-Sep-2026 17:08:16 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/footer.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 526
+[08-Sep-2026 17:08:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/footer.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php:526
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 526
+[08-Sep-2026 17:11:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php on line 18
+[08-Sep-2026 17:22:49 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/footer.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 526
+[08-Sep-2026 17:22:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/footer.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php:526
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 526
+[08-Sep-2026 17:23:02 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/footer.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 526
+[08-Sep-2026 17:23:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/footer.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php:526
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/contact.php on line 526

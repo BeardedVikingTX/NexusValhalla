@@ -1,9 +1,33 @@
 <?php
+/**
+ * config.php – Site Configuration
+ * 
+ * All site-wide constants and settings.
+ */
+
 // ============================================================
-// Database Configuration
+// SITE URL (auto-detect)
 // ============================================================
-define('DB_HOST', 'localhost');            // Usually 'localhost' on NameCheap
-define('DB_NAME', 'beardedviking_nexusvalhalla');   // Replace with your actual DB name
-define('DB_USER', 'beardedviking_admin_bvsec');   // Replace with your DB username
-define('DB_PASS', '{f8m*q5bm*Jg^4ZRM&'); // Replace with your DB password
-?>
+define('SITE_URL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https://' : 'http://') . $_SERVER['HTTP_HOST']);
+define('SITE_NAME', 'NexusValhalla');
+
+// ============================================================
+// ASSET PATHS
+// ============================================================
+define('ASSETS_URL', SITE_URL . '/assets');
+define('CSS_URL', ASSETS_URL . '/css');
+define('JS_URL', ASSETS_URL . '/js');
+define('PAGES_DIR', __DIR__ . '/../pages');
+
+// ============================================================
+// DATABASE (if needed)
+// ============================================================
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'beardedviking_nexusvalhalla');   // CHANGE THIS
+define('DB_USER', 'beardedviking_admin_bvsec');   // CHANGE THIS
+define('DB_PASS', '{f8m*q5bm*Jg^4ZRM&'); // CHANGE THIS
+
+// ============================================================
+// ENCRYPTION KEY (for cookies.php encryption)
+// ============================================================
+define('ENCRYPTION_KEY', 'change-this-to-a-secure-key-32-bytes');
