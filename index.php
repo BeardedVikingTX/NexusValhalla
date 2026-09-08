@@ -11,7 +11,7 @@
 // Define image paths for the AI comparison
 $ai_models = [
     'DeepSeek' => [
-        'img' => 'assets/img/media/DeepSeek_Homepage.png',
+        'img' => 'assets/img/DeepSeek_Home1.png',
         'site' => 'https://nexusvalhalla.beardedviking.org',
         'repo' => 'https://github.com/BeardedVikingTX/NexusValhalla',
         'winner' => true,
@@ -19,7 +19,7 @@ $ai_models = [
         'strengths' => ['Security', 'UI/UX', 'Performance', 'Documentation']
     ],
     'ChatGPT' => [
-        'img' => 'assets/img/media/ChatGPT_Homepage.png',
+        'img' => 'assets/img/ChatGPT_home1.png',
         'site' => 'https://nexora.beardedviking.org',
         'repo' => 'https://github.com/BeardedVikingTX/Nexora',
         'winner' => false,
@@ -27,7 +27,7 @@ $ai_models = [
         'strengths' => ['Design', 'Content', 'Responsiveness']
     ],
     'Claude' => [
-        'img' => 'assets/img/media/Claude_Homepage.png',
+        'img' => 'assets/img/Claude_home1.png',
         'site' => 'https://ravenwarp.beardedviking.org',
         'repo' => 'https://github.com/BeardedVikingTX/RavenWarp',
         'winner' => false,
@@ -35,7 +35,7 @@ $ai_models = [
         'strengths' => ['Code Quality', 'Architecture', 'Documentation']
     ],
     'CoPilot' => [
-        'img' => 'assets/img/media/CoPilot_Homepage.png',
+        'img' => 'assets/img/CoPilot_home1.png',
         'site' => 'https://sagasphere.beardedviking.org',
         'repo' => 'https://github.com/BeardedVikingTX/SagaSphere',
         'winner' => false,
@@ -43,7 +43,7 @@ $ai_models = [
         'strengths' => ['Speed', 'Integration', 'Boilerplate']
     ],
     'Gemini' => [
-        'img' => 'assets/img/media/Gemini_Homepage.png',
+        'img' => 'assets/img/Gemini_home1.png',
         'site' => 'https://valkyrin.beardedviking.org',
         'repo' => 'https://github.com/BeardedVikingTX/Valkyrin',
         'winner' => false,
