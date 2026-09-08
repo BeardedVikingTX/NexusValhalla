@@ -1,0 +1,12 @@
+[08-Sep-2026 00:42:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php on line 14
+[08-Sep-2026 00:42:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php on line 14
+[08-Sep-2026 00:42:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php on line 22
