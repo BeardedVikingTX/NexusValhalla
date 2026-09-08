@@ -31,3 +31,18 @@ define('DB_PASS', '{f8m*q5bm*Jg^4ZRM&'); // CHANGE THIS
 // ENCRYPTION KEY (for cookies.php encryption)
 // ============================================================
 define('ENCRYPTION_KEY', 'change-this-to-a-secure-key-32-bytes');
+
+// ============================================================
+// USER & FILE SYSTEM PATHS
+// ============================================================
+define('USERS_DIR', __DIR__ . '/../users');
+define('AVATARS_DIR', USERS_DIR . '/images/avatars');
+define('BANNERS_DIR', USERS_DIR . '/images/banners');
+define('AVATARS_URL', SITE_URL . '/users/images/avatars');
+define('BANNERS_URL', SITE_URL . '/users/images/banners');
+
+// ============================================================
+// EMAIL CONFIGURATION
+// ============================================================
+define('SITE_EMAIL', 'info@beardedviking.org');
+define('SITE_EMAIL_NAME', 'NexusValhalla');
