@@ -4,36 +4,25 @@
  *  NexusValhalla :: includes/header.php
  * ------------------------------------------------------------
  *  The dynamic top-level shell for every page on the site.
- *
- *  USAGE (at the top of any page, e.g. index.php):
- *
- *      <?php
- *      define('NEXUSVALHALLA_APP', true);
- *      $pageTitle       = 'NexusValhalla – Forge Your Saga';
- *      $pageDescription = 'Connect, post, and build reputation on NexusValhalla.';
- *      $pageBodyClass   = 'page-home';   // optional, for page-specific CSS hooks
- *      require_once __DIR__ . '/includes/header.php';
- *      ?>
- *
- *      ... your page content goes here ...
- *
- *      <?php require_once __DIR__ . '/includes/footer.php'; ?>
  * ============================================================
  */
 
-// Guard flag so cookies.php (and future includes) know they were
-// pulled in through the proper front door, not accessed directly.
+// ============================================================
+// 1. FORCE LOAD CONFIGURATION (MUST be first)
+// ============================================================
+require_once __DIR__ . '/config.php';
+
+// ============================================================
+// 2. LOAD SESSION & SECURITY KERNEL
+// ============================================================
+require_once __DIR__ . '/cookies.php';
+
+// ============================================================
+// 3. GUARD FLAG – Prevent direct access to includes
+// ============================================================
 if (!defined('NEXUSVALHALLA_APP')) {
     define('NEXUSVALHALLA_APP', true);
 }
-
-// Load configuration (if not already loaded)
-if (!defined('SITE_URL')) {
-    require_once __DIR__ . '/config.php';
-}
-
-// Load session & security kernel
-require_once __DIR__ . '/cookies.php';
 
 // ------------------------------------------------------------
 // Dynamic page metadata — every page can override these before
@@ -62,11 +51,10 @@ $safeBodyClass   = htmlspecialchars($pageBodyClass, ENT_QUOTES, 'UTF-8');
 
     <title><?= $safeTitle ?></title>
 
-    <!-- Favicon (swap for your real asset once branding is locked) -->
-    <link rel="icon" type="image/png" href="<?= ASSETS_URL ?>/img/favicon.png">
+    <!-- Favicon -->
+    
 
     <!-- ================= Google Fonts ================= -->
-    <!-- Orbitron: sci-fi display headers | Rajdhani: techy sub-headers | Exo 2: clean body copy -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Exo+2:wght@400;500;600&display=swap" rel="stylesheet">
@@ -80,16 +68,16 @@ $safeBodyClass   = htmlspecialchars($pageBodyClass, ENT_QUOTES, 'UTF-8');
           integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- ================= NexusValhalla Custom Theme ================= -->
-    <link rel="stylesheet" href="<?= ASSETS_URL ?>/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!-- ================= JavaScript (deferred, in head for preload) ================= -->
+    <!-- ================= JavaScript (deferred) ================= -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-    <script src="<?= ASSETS_URL ?>/js/functions.js" defer></script>
+    
 </head>
 <body class="<?= $safeBodyClass ?>">
 
@@ -108,5 +96,3 @@ $safeBodyClass   = htmlspecialchars($pageBodyClass, ENT_QUOTES, 'UTF-8');
 
 <!-- The nebula background is handled by CSS, but we keep a container -->
 <div id="nebula-bg" aria-hidden="true"></div>
-
-<!-- The page content will go here (after header inclusion) -->

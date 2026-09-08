@@ -10,3 +10,84 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/index.php on line 22
+[08-Sep-2026 14:32:48 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 18
+[08-Sep-2026 14:32:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 18
+[08-Sep-2026 14:41:26 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 18
+[08-Sep-2026 14:41:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 18
+[08-Sep-2026 14:41:42 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active (started from /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 71) in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 307
+[08-Sep-2026 14:41:42 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active (started from /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 71) in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 308
+[08-Sep-2026 14:41:42 UTC] [2026-09-08 14:41:42] [info] [IP: 209.113.134.95] [UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36] New session initialized
+[08-Sep-2026 14:41:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:66
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 66
+[08-Sep-2026 14:42:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active (started from /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 71) in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 307
+[08-Sep-2026 14:42:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active (started from /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 71) in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/cookies.php on line 308
+[08-Sep-2026 14:42:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:66
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 66
+[08-Sep-2026 14:44:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:66
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 66
+[08-Sep-2026 14:44:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:66
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 66
+[08-Sep-2026 14:45:00 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:66
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 66
+[08-Sep-2026 14:47:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:55
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 55
+[08-Sep-2026 14:47:36 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/includesconfig.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 13
+[08-Sep-2026 14:47:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/includesconfig.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:13
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 13
+[08-Sep-2026 14:47:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:55
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 55
+[08-Sep-2026 14:47:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:55
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 55
+[08-Sep-2026 14:48:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:71
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 71
+[08-Sep-2026 14:48:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:71
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 71
+[08-Sep-2026 14:49:20 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:80
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 80
+[08-Sep-2026 14:49:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ASSETS_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php:80
+Stack trace:
+#0 /home/beardedviking/nexusvalhalla.beardedviking.org/about.php(18): require_once()
+#1 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/includes/header.php on line 80

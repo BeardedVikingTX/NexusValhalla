@@ -64,6 +64,12 @@ ini_set('session.sid_length', 48);
 ini_set('session.sid_bits_per_character', 6);
 
 // ============================================================
+// 1b. SESSION GARBAGE COLLECTION (must be set BEFORE session_start)
+// ============================================================
+ini_set('session.gc_probability', 1);
+ini_set('session.gc_divisor', 100);
+
+// ============================================================
 // 2. START THE SESSION
 // ============================================================
 
@@ -248,11 +254,6 @@ $csp = [
     "base-uri 'self'"
 ];
 
-// If we're in development, add report-uri for CSP violation logging
-if (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
-    // In production, you could add: "report-uri /csp-report.php"
-}
-
 header('Content-Security-Policy: ' . implode('; ', $csp));
 
 // ============================================================
@@ -300,12 +301,10 @@ function refreshCsrfToken() {
 }
 
 // ============================================================
-// 10. SESSION CLEANUP & GARBAGE COLLECTION (tuned for performance)
+// 10. SESSION CLEANUP & GARBAGE COLLECTION (already set above)
 // ============================================================
 
-// Set session garbage collection probability (1% chance per request)
-ini_set('session.gc_probability', 1);
-ini_set('session.gc_divisor', 100);
+// The gc settings are already set before session_start.
 
 // ============================================================
 // 11. RATE LIMITING STUB (ready to expand)
