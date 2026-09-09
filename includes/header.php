@@ -1,74 +1,58 @@
 <?php
 /**
- * header.php – Page Header & Layout
- * 
- * Simple, reliable header that loads config, sessions, and outputs HTML.
+ * header.php – Page Header
  */
 
 // ============================================================
 // LOAD CONFIGURATION
 // ============================================================
-require_once __DIR__ . '/config.php';
+
+require_once __DIR__ . '/../config/config.php';
 
 // ============================================================
-// LOAD SESSION HANDLER
+// LOAD SESSION & TRACKING (cookies.php does ALL the work)
 // ============================================================
+
 require_once __DIR__ . '/cookies.php';
 
 // ============================================================
-// PAGE METADATA (with sensible defaults)
+// DEFAULT METADATA
 // ============================================================
-$pageTitle       = $pageTitle       ?? 'NexusValhalla – Forge Your Saga';
+
+$pageTitle = $pageTitle ?? SITE_NAME . ' – Forge Your Saga';
 $pageDescription = $pageDescription ?? 'NexusValhalla is a secure, next-gen social network fusing Norse mythology with sci-fi futurism.';
-$pageBodyClass   = $pageBodyClass   ?? '';
-
-// Escape for safety
-$safeTitle       = htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8');
-$safeDescription = htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8');
-$safeBodyClass   = htmlspecialchars($pageBodyClass, ENT_QUOTES, 'UTF-8');
+$pageBodyClass = $pageBodyClass ?? '';
+$isLoggedIn = isLoggedIn();
 
 // ============================================================
-// OUTPUT HTML
+// OUTPUT HTML HEAD
 // ============================================================
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?= $safeDescription ?>">
+    <meta name="description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="theme-color" content="#0a0e17">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
     
-    <title><?= $safeTitle ?></title>
+    <title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="<?= IMAGES_URL ?>/favicon.png">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Exo+2:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Local Dependencies -->
+    <link rel="stylesheet" href="<?= BOOTSTRAP_CSS ?>">
+    <link rel="stylesheet" href="<?= FONTAWESOME_CSS ?>">
+    <link rel="stylesheet" href="<?= GOOGLE_FONTS_CSS ?>">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/main.css">
     
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="/assets/js/functions.js" defer></script>
+    <!-- JavaScript -->
+    <script src="<?= BOOTSTRAP_JS ?>" defer></script>
+    <script src="<?= FONTAWESOME_JS ?>" defer></script>
+    <script src="<?= JS_URL ?>/main.js" defer></script>
 </head>
-<body class="<?= $safeBodyClass ?>">
+<body class="<?= htmlspecialchars($pageBodyClass, ENT_QUOTES, 'UTF-8') ?> <?= $isLoggedIn ? 'logged-in' : 'logged-out' ?>">
 
 <!-- Skip to content -->
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>

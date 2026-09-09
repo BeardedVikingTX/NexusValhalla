@@ -1,0 +1,11 @@
+[09-Sep-2026 03:48:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "IMAGES_URL" in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 16
+[09-Sep-2026 03:49:16 UTC] PHP Warning:  require_once(/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php): Failed to open stream: No such file or directory in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 21
+[09-Sep-2026 03:49:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/beardedviking/nexusvalhalla.beardedviking.org/../includes/header.php' (include_path='.:/opt/alt/php85/usr/share/pear:/opt/alt/php85/usr/share/php:/usr/share/pear:/usr/share/php') in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 21
+[09-Sep-2026 03:50:02 UTC] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 262
+[09-Sep-2026 03:50:18 UTC] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /home/beardedviking/nexusvalhalla.beardedviking.org/about.php on line 260
